@@ -2,7 +2,7 @@ const express = require('express')
 const { createServer } = require('node:http');
 const { Server } = require('socket.io');
 const cors = require('cors');
-const port = 3000
+const port = process.env.PORT || 8080
 
 const app = express()
 var whitelist = ['*']
